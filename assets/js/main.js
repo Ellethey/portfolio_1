@@ -58,11 +58,6 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
 // dark mode
 
-// function convertD(){
-
-// }
-
-// احصل على الزر (الأيقونة) والـ <body>
 const toggleButton = document.getElementById('toggleButton');
 const body = document.body;
 const header = document.querySelector('.l-header');
@@ -70,6 +65,7 @@ const fontH = document.querySelectorAll('.fontH');
 var moon = document.querySelector('.bxs-moon')
 var DivDark = document.querySelector('.icon-dark')
 var footer = document.querySelector('.footer')
+var menu = document.querySelector('.bx-menu')
 var isDarkMode = false;
 
 toggleButton.addEventListener('click', function() {
@@ -81,6 +77,7 @@ toggleButton.addEventListener('click', function() {
         DivDark.style.backgroundColor = "black";
         footer.style.backgroundColor = "black";
         header.style.backgroundColor = "black";
+        menu.style.color = "white";
         fontH.forEach(element => {
             element.style.color = "white";
         });
@@ -88,6 +85,7 @@ toggleButton.addEventListener('click', function() {
         DivDark.style.backgroundColor = "white";
         footer.style.backgroundColor = "hsl( 224 , 56%, 12%)";
         header.style.backgroundColor = "white";
+        menu.style.color = "black";
         fontH.forEach(element => {
             element.style.color = "black";
         });
